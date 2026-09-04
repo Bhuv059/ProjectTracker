@@ -1,9 +1,4 @@
-const TotalProjectValue = ({
-  totalValue,
-  totalAll,
-  projectLength,
-  projectsCompleted,
-}) => {
+const Statistics = ({ totalAll, projectLength, projectsCompleted }) => {
   return (
     <>
       <div className="overview-copy">
@@ -28,4 +23,4 @@ const TotalProjectValue = ({
   );
 };
 
-export default TotalProjectValue;
+export default Statistics;

@@ -1,4 +1,6 @@
-const IntroSection = () => {
+import Statistics from "./Statistics";
+
+const IntroSection = ({ totalAll, projectLength, projectsCompleted }) => {
   return (
     <>
       <div className="intro-row">
@@ -12,6 +14,15 @@ const IntroSection = () => {
         <button className="new-project">
           <span>+</span> New project
         </button>
+      </div>
+      <div>
+        <section className="overview" aria-label="Project overview">
+          <Statistics
+            totalAll={totalAll}
+            projectLength={projectLength}
+            projectsCompleted={projectsCompleted}
+          />
+        </section>
       </div>
     </>
   );
